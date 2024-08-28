@@ -1,0 +1,156 @@
+.nav {
+    box-shadow: 0 4px 8px 0 hsla(0,0%,65%,0);
+    height: 5rem;
+    left: 0;
+    position: fixed;
+    top: 0;
+    transition: .25s linear;
+    width: 100vw;
+    z-index: 5000000000000000!important;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+
+    .nav-container {
+        align-items: stretch;
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        justify-content: space-between;
+        padding: 0 max(1rem,2vw);
+        width: 100%;
+
+        .nav-logo {
+            text-decoration: none;
+            align-items: center;
+            display: flex;
+            gap: max(.25rem, .5vw);
+
+            h1 {
+                font-family: regularBrownSugar,sans-serif;
+                line-height: 1.4;
+                font-weight: 500;
+                color: #fff;
+                font-size: max(17px,1.5vw);
+            }
+        }
+
+        .nav-menu {
+            align-items: center;
+            display: flex;
+            gap: max(.5rem,2vw);
+            height: 100%;
+            justify-content: center;
+            padding: 0 max(.1rem,.2vw);
+            position: relative;
+            
+           
+
+            .nav-link {
+                align-items: center;
+                display: flex;
+                height: 100%;
+                position: relative;
+                font-family: regularMont, sans-serif;
+
+                a {
+                    align-items: center;
+                    color: #fff;
+                    display: flex;
+                    font-size: max(17px,.75vw);
+                    gap: max(.25rem,.5vw);
+                    justify-content: center;
+                    transition: .2s ease-out;
+                    padding: max(.25rem,.5vw) max(.1rem,.5vw);
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .nav-auth {
+            align-items: center;
+            display: flex;
+            gap: .5rem;
+            font-family: regularMont, sans-serif;
+
+            .auth-link {
+                gap: .5rem;
+                display: flex;
+                height: 50%;
+                justify-content: space-evenly;
+                flex-direction: column-reverse;
+                flex-wrap: wrap;
+                align-content: space-between;
+
+                a {
+                    gap: .5rem;
+                    flex-direction: column-reverse;
+                    flex-wrap: wrap;
+                    align-content: space-between;
+                    align-items: center;
+                    background-color: transparent;
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: center;
+                    overflow: hidden;
+                    position: relative;
+                    padding: max(.35rem, .35vw) max(.5rem, 1.25vw);
+                    text-decoration: none;
+                    color: #fff;
+
+                    p {
+                        line-height: 1.7;
+                        transition: .5s ease-in-out;
+                        white-space: nowrap;
+                        z-index: 2;
+                        font-weight: 400;
+                        font-size: max(16px, 0.85vw);
+                    }
+                }
+            }
+
+            .auth-contact {
+                gap: .5rem;
+                display: flex;
+                justify-content: space-evenly;
+                flex-direction: column-reverse;
+                flex-wrap: wrap;
+                align-content: space-between;
+                height: 50%;
+                background-color: white;
+                border-radius: max(30px, 3vw);
+
+                a {
+                    gap: .5rem;
+                    flex-direction: column-reverse;
+                    flex-wrap: wrap;
+                    align-content: space-between;
+                    align-items: center;
+                    background-color: transparent;
+                    border: 2px solid var(--main-color);
+                    border-radius: max(30px, 3vw);
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: center;
+                    overflow: hidden;
+                    position: relative;
+                    transition: .3s ease-in-out;
+                    padding: max(.35rem, .35vw) max(.5rem, 1.25vw);
+                    text-decoration: none;
+                    color: #111;
+
+                    p {
+                        line-height: 1.7;
+                        position: relative;
+                        white-space: nowrap;
+                        z-index: 4;
+                        color: var(--main-color) !important;
+                        font-weight: 500;
+                        font-size: max(16px, 0.85vw);
+                    }
+                }
+            }
+        }
+    }
+}

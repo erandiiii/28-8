@@ -1,0 +1,168 @@
+.first-page {
+    background-image: url(https://modelkos.com/static/media/bnn.3ac994f721e0d732339c.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    display: flex;
+    justify-content: space-between;
+    padding: 15% 5%;
+    position: relative;
+
+    .bg {
+        background-color: #000;
+        opacity: 0.75 !important;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 1;
+    }
+
+    .fp-left {
+        display: flex;
+        flex-direction: column;
+        gap: max(1rem, 3vw);
+        justify-content: center;
+        width: 60%;
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;
+
+            .fp-title1 {
+                font-family: regularBrownSugar, sans-serif;
+                line-height: 1.4;
+                font-size: max(25px, 3.5vw);
+                position: relative;
+                z-index: 3;
+                color: #fff;
+                font-weight: 900;
+                width: fit-content;
+                z-index: 2;
+            }
+
+            .fp-title2 {
+                font-family: regularBrownSugar, sans-serif;
+                line-height: 1.4;
+                font-size: max(25px, 3.5vw);
+                position: relative;
+                z-index: 3;
+                color: #fff;
+                font-weight: 900;
+                width: fit-content;
+                margin-left: max(0rem, 10vw);
+                z-index: 2;
+            }
+        }
+
+        .row {
+            align-items: stretch;
+            display: flex;
+            gap: max(.25rem, 1vw);
+            height: 4rem;
+            width: 100%;
+
+            .input1 {
+                position: relative;
+                z-index: 3;
+                align-items: center;
+                border: 1px solid #fff;
+                display: flex;
+                gap: max(.25rem, 2vw);
+                padding: max(.25rem, .5vw) max(.25rem, 1vw);
+                z-index: 2;
+                input{
+                    background: transparent;
+                    outline: none;
+                    border: none;
+                    z-index: 2;
+                }
+                input::placeholder {
+                    color: #fff; 
+                  }
+            }
+
+            .input2 {
+                position: relative;
+                z-index: 3;
+                align-items: center;
+                border: 1px solid #fff;
+                display: flex;
+                gap: max(.25rem, 2vw);
+                padding: max(.25rem, .5vw) max(.25rem, 1vw);
+                z-index: 2;
+                input{
+                    background: transparent;
+                    outline: none;
+                    border: none;
+                    z-index: 2;
+                }
+                input::placeholder {
+                    color: #fff; 
+                  }
+            }
+            button{
+                align-items: center;
+                background-color: transparent;
+                border: 2px solid #fff;
+                border-radius: 0;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                overflow: hidden;
+                padding: max(.35rem,1vw) max(.5rem,2.5vw);
+                transition: .3s ease-in-out;
+                position: relative;
+                z-index: 2;
+                
+                p{
+                    line-height: 1.7;
+                    font-size: max(13.5px,.9vw);
+                    color: #fff!important;
+                    position: relative;
+                    transition: .2s ease-in-out;
+                    white-space: nowrap;
+                    z-index: 2  ;
+                }
+            }
+        }
+    }
+    .fp-right{
+        align-content: center;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 35%;
+
+        .first-image{
+            background-image: url(https://modelkos.com/static/media/bannerimg1.b7df62e3cc186d7b6f5a.png);
+            height: max(10rem,20vw);
+            transition: .2s ease-in;
+            width: max(7.5rem,15vw);
+            background-position: top;      
+            position: relative;
+            z-index: 2;
+        }
+        .second-image{
+            background-image: url(https://modelkos.com/static/media/bannerimg2.c8faa2ed241f234140ba.png);
+            height: max(10rem,20vw);
+            transition: .2s ease-in;
+            width: max(7.5rem,15vw);
+            background-position: top;
+            left: -5rem;
+            position: relative;
+            top: 5rem;
+            transform: rotate(30deg);
+            z-index: 3;
+        }
+        .second-image:hover{
+            transform: scale(1.15);
+        }
+    }
+
+
+}

@@ -1,0 +1,18 @@
+
+import Home from './components/Home'
+// import Nav from './Nav'
+
+
+function App() {
+
+
+  return (
+    <>
+    {/* <Nav/> */}
+     <Home/>
+    
+    </>
+  )
+}
+
+export default App
